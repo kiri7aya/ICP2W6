@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">In Class Practice 2</h1>
+        <div class="card mt-4">
+            <div class="card-header">Temperature Conversion</div>
+            <div class="card-body">
+                <input type="number" id="tempInput" class="form-control" placeholder="Enter temperature">
+                <select id="tempType" class="form-control mt-2">
+                    <option value="CtoF">Celsius to Fahrenheit</option>
+                    <option value="FtoC">Fahrenheit to Celsius</option>
+                </select>
+                <button class="btn btn-primary mt-2" onclick="convertTemperature()">Convert</button>
+                <p class="mt-2" id="tempOutput"></p>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">Current Day and Time</div>
+            <div class="card-body">
+                <button class="btn btn-primary" onclick="displayCurrentDayAndTime()">Show Current Day and Time</button>
+                <p class="mt-2" id="timeOutput"></p>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">Leap Year Checker</div>
+            <div class="card-body">
+                <input type="number" id="leapYearInput" class="form-control" placeholder="Enter year">
+                <button class="btn btn-primary mt-2" onclick="checkLeapYear()">Check Leap Year</button>
+                <p class="mt-2" id="leapYearOutput"></p>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">Years When January 1st is a Sunday</div>
+            <div class="card-body">
+                <button class="btn btn-primary" onclick="findSundayYears()">Find Years</button>
+                <p class="mt-2" id="sundayYearsOutput"></p>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">Remove Character from String</div>
+            <div class="card-body">
+                <input type="text" id="stringInput" class="form-control" placeholder="Enter string">
+                <input type="number" id="charPosition" class="form-control mt-2" placeholder="Enter position">
+                <button class="btn btn-primary mt-2" onclick="removeCharacter()">Remove Character</button>
+                <p class="mt-2" id="removeCharOutput"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
